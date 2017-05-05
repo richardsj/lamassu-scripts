@@ -81,7 +81,7 @@ COPY user_config (id, type, data) FROM stdin;
       "retryInterval": 5000,\
       "retries": 3,\
       "lowBalanceMargin": 1.05,\
-      "transactionFee": 10000,\
+      "transactionFee": 150000,\
       "tickerDelta": 0,\
       "minimumTradeFiat": 0\
     },\
@@ -89,7 +89,8 @@ COPY user_config (id, type, data) FROM stdin;
       "settings": {\
         "bitgo": {\
           "retryInterval": 10000,\
-          "retryTimeout": 60000\
+          "retryTimeout": 60000,\
+          "minConfirms": 0\
         }\
       }\
     }\
